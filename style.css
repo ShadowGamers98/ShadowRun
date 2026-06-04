@@ -1,0 +1,205 @@
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #04060f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+      font-family: monospace;
+    }
+    h17 {
+      color: #00f5ff;
+      margin: 8px 0;
+      font-size: 22px;
+      letter-spacing: 4px;
+      text-shadow: 0 0 10px #00f5ff;
+    }
+    #screen {
+      rotate: 90deg;
+      border: none;
+      display: block;
+      transform: translateX(164px);
+    }
+    #controls {
+      display: flex;
+      justify-content: space-between;
+      width: 280px;
+      margin-top: 10px;
+      gap: 10px;
+      text-align: center;
+      rotate: 90deg;
+      transform: translateY(120px);
+    }
+    .btn {
+      flex: 1;
+      height: 60px;
+      font-size: 40px;
+      font-weight: 999;
+      background: transparent;
+      color: #00f5ff;
+      border: none;
+      cursor: pointer;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn:active { background: #00f5ff22; }
+    
+    #btnLeft {transform: translateX(-250px); }
+    #btnRight {transform: translateX(-258px);}
+    #btnJump {transform: translateX(140px);}
+    
+/*
+    |───────────────────────────|
+    |  MAIN SCREEN  EXTRA PART  |
+    |───────────────────────────|
+*/
+    
+    .canvasss {
+      rotate: 90deg;
+      border: none;
+      display: block;
+      transform: translateX(164px);
+    }
+    
+    #playButton {
+      rotate: 90deg;
+      width: 18rem;
+      height: 2.5rem;
+      transform: translateX(-31.15px) translateY(-10px);
+      font-size: 24px;
+      font-weight: 800;
+      font-family: Monospace;
+      color: #00f5ff;
+      background: #302082;
+      border: 1px solid #5018ef;
+    }
+    
+    #shopButton {
+      rotate: 90deg;
+      width: 18rem;
+      height: 2.5rem;
+      transform: translateX(-71.15px) translateY(45px);
+      font-size: 24px;
+      font-weight: 800;
+      font-family: Monospace;
+      color: #00f5ff;
+      background: #302082;
+      border: 1px solid #5018ef;
+    }
+    
+    #settingButton {
+      rotate: 90deg;
+      width: 18rem;
+      height: 2.5rem;
+      transform: translateX(-111.15px) translateY(100px);
+      font-size: 24px;
+      font-weight: 800;
+      font-family: Monospace;
+      color: #00f5ff;
+      background: #302082;
+      border: 1px solid #5018ef;
+    }
+    
+    .levelBtn {
+      width: 5.4rem;
+      height: 4rem;
+      border: 1px solid #5018ef;
+      background: #302082;
+      color: #00f5ff;
+      font-size: 1.8rem;
+      margin: 5px auto;
+      margin-top: 7px;
+      font-family: Monospace;
+      transform: translateY(30px);
+    }
+    
+    .levelBtnHolder1 {
+      rotate: 90deg;
+      text-align: center;
+      border: none;
+      transform: translateX(-170px) translateY(24px);
+      height: 14.4rem;
+      width: 30rem;
+    }
+    
+    #backToHomeScreen {
+      rotate: 90deg;
+      transform: translateX(-320px) translateY(-140px);
+      height: 3rem;
+      width: 4rem;
+      font-weight: 999;
+      font-size: 2rem;
+      background: #302082;
+      color: #00f5ff;
+      border: 1px solid #5018ef;
+      font-family: Monospace;
+    }
+    
+    #ScreenShow {
+      rotate: 90deg;
+      background: #e5e5f5;
+      height: 18rem;
+      width: 25rem;
+      transform: translateY(-10px) translateX(-260px);
+      border-radius: 20px;
+      display: none;
+      text-align: center;
+      overflow-y: auto;
+    }
+    
+    #cross {
+      color: black;
+      rotate: 90deg;
+      transform: translateY(-130px) translateX(-254px);
+      display: none;
+      font-size: 3rem;
+      background: transparent;
+      border: none;
+    }
+    
+    #BackPageBTN {
+      color: black;
+      rotate: 90deg;
+      transform: translateY(-130px) translateX(-254px);
+      display: none;
+      font-size: 3rem;
+      background: transparent;
+      border: none;
+    }
+    
+    .TermP {
+      text-align: left;
+      margin-top: 25px;
+      margin-left: 8px;
+      margin-bottom: 10px;
+      margin-right: 5px;
+    }
+    
+    .star {
+      position: absolute;
+      transform: translateY(-20px) translateX(10px);
+      font-size: 1.5rem;
+    }
+    
+    .LVLtext {
+      transform: translateY(-10px);
+    }
+    
+    #backToScreen {
+    }
+    
+    #pauseBtn {
+      rotate: 90deg;
+      font-size: 1rem;
+    }
+    
+    #inGameScreen {
+      rotate: 90deg;
+      display: none;
+      transform: translateX(-20rem);
+    }
+    
+    @keyframes ScreenShowAnimation {
+      from{opacity:1;transform:translateY(-5px);}
+        to{opacity:1;transform:translateY(5px);}
+    }
